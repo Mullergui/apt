@@ -337,6 +337,10 @@ const CATALOG = [
   {cat:'Quarto', kind:'slidewardrobe', name:'Guarda-roupa de correr com porta ripada', w:1.50,d:0.55,h:2.35,color:'#8A5A35'},
   {cat:'Sala', kind:'sideboard', name:'Rack fechado com pés palito', w:1.60,d:0.40,h:0.60,color:'#B08455'},
   {cat:'Decoração', kind:'plant', name:'Ave-do-paraíso em cesto', w:0.55,d:0.55,h:1.40,color:'#C9A36A',folhaGrande:true},
+  {cat:'Quarto', kind:'glasswardrobe', name:'Armário com portas de vidro fumê', w:1.00,d:0.60,h:2.40,color:'#C9A27A'},
+  {cat:'Quarto', kind:'bookcolumn', name:'Coluna de livros com criado', w:0.42,d:0.38,h:2.40,color:'#C9A27A'},
+  {cat:'Quarto', kind:'nichepanel', name:'Painel de nicho com LED', w:1.40,d:0.01,h:0.75,elev:1.00,color:'#C9A27A'},
+  {cat:'Quarto', kind:'upholpanel', name:'Painel estofado de parede', w:1.80,d:0.04,h:0.62,elev:0.35,color:'#9E4A3B'},
   {cat:'Sob medida', kind:'box', name:'Caixa sob medida', w:0.60,d:0.60,h:0.90,color:'#C9B79C'}
 ];
 
@@ -350,8 +354,7 @@ const PLAN_LAYOUT = [
   {"color":"#7D7F82","d":0.64,"elev":0,"h":0.85,"kind":"washer","name":"Lava e seca","rot":180,"w":0.6,"x":2.78,"z":5.63},
   {"color":"#F7F7F5","d":0.64,"elev":0,"fixed":true,"h":0.78,"kind":"toilet","name":"Vaso sanitário","rot":-90,"w":0.37,"x":4.6,"z":4.88},
   {"color":"#A9B2B8","d":0.75,"elev":0,"fixed":true,"h":1.95,"kind":"shower","name":"Box","rot":180,"w":1.25,"x":4.295,"z":5.575},
-  {"amassado":true,"color":"#2A3B5C","d":1.93,"elev":0,"h":1,"kind":"bed","name":"Cama casal","rot":0,"w":1.38,"x":4.21,"z":1.85},
-  {"color":"#8A5A35","d":0.55,"elev":0,"h":2.35,"kind":"slidewardrobe","name":"Guarda-roupa de correr com porta ripada","rot":180,"w":1.5,"x":4.17,"z":3.475},
+  {"amassado":true,"color":"#2A3B5C","d":1.88,"elev":0,"h":1,"kind":"bed","name":"Cama casal","rot":0,"w":1.38,"x":3.26,"z":1.825},
   {"color":"#1C2F44","color2":"#22374D","correr":true,"d":0.5,"elev":0,"fixed":true,"h":0.9,"kind":"peninsula","name":"Península com bar","rot":0,"w":1.4,"x":0.702,"z":2.95},
   {"color":"#B07D4F","color2":"#2F4D6B","d":0.6,"elev":0,"fixed":true,"h":0.9,"inducao":true,"kind":"cookmodule","name":"Cooktop de indução com forno de embutir","rot":90,"w":0.6,"x":0.302,"z":3.5},
   {"color":"#B07D4F","color2":"#2F4D6B","d":0.6,"elev":0,"h":0.9,"kind":"cabinet","name":"Gabinete de apoio","rot":90,"w":0.27,"x":0.31,"z":3.935},
@@ -369,12 +372,9 @@ const PLAN_LAYOUT = [
   {"art":12,"color":"#7E8F9C","d":0.03,"elev":1.62,"frame":"#C9A55A","gold":true,"h":0.26,"kind":"picture","mat":true,"name":"Quadro pequeno","rot":90,"w":0.2,"x":0.035,"z":1.38},
   {"art":6,"color":"#7E8F9C","d":0.03,"elev":1.55,"frame":"#C9A55A","gold":true,"h":0.3,"kind":"picture","name":"Quadro dourado pequeno","rot":90,"w":0.26,"x":0.035,"z":1.86},
   {"art":15,"color":"#7E8F9C","d":0.03,"elev":1.02,"frame":"#6B4A2E","h":0.4,"kind":"picture","mat":true,"name":"Quadro de madeira","rot":90,"w":0.3,"x":0.035,"z":1.98},
-  {"color":"#C9A27A","d":0.45,"elev":0,"h":0.75,"kind":"workdesk","name":"Escrivaninha de madeira","rot":0,"w":0.9,"x":3,"z":1.075},
-  {"color":"#A8641F","couro":true,"d":0.58,"elev":0,"h":0.95,"kind":"officechair","name":"Cadeira de escritório caramelo","rot":180,"w":0.58,"x":3,"z":1.52},
-  {"color":"#9C2F2B","d":1.2,"elev":0,"h":0.008,"kind":"rug","name":"Tapete persa","persa":true,"rot":0,"w":0.95,"x":3,"z":1.62},
-  {"brackets":true,"color":"#C9A27A","d":0.25,"elev":1.45,"h":0.035,"kind":"wallshelf","name":"Prateleira do escritório","rot":90,"w":0.8,"x":2.645,"z":1.3},
-  {"brackets":true,"color":"#C9A27A","d":0.25,"elev":1.82,"h":0.035,"kind":"wallshelf","name":"Prateleira do escritório","rot":90,"w":0.8,"x":2.645,"z":1.3},
-  {"color":"#F5F5F3","d":0.2,"elev":2.08,"h":0.29,"kind":"ac","name":"Ar-condicionado split","rot":0,"w":0.85,"x":4.42,"z":0.95},
+  {"color":"#C9A27A","d":0.45,"elev":0,"h":0.75,"kind":"workdesk","name":"Escrivaninha de madeira","rot":-90,"w":1.42,"x":4.695,"z":1.58},
+  {"color":"#1C1C1E","couro":true,"d":0.58,"elev":0,"h":0.95,"kind":"officechair","name":"Cadeira de escritório preta","rot":90,"w":0.58,"x":4.24,"z":1.58},
+  {"color":"#F5F5F3","d":0.2,"elev":2.205,"h":0.29,"kind":"ac","name":"Ar-condicionado split","rot":0,"w":0.85,"x":3.45,"z":0.95},
   {"color":"#8A5A33","d":0.1,"elev":0,"h":2.5,"kind":"glasspartition","name":"Divisória de madeira e vidro canelado","rot":90,"w":0.9,"x":1.98,"z":5.5},
   {"color":"#C8A27A","d":0.58,"elev":0,"h":2.4,"kind":"wardrobe","name":"Armário coluna","rot":180,"w":0.45,"x":3.325,"z":5.66},
   {"color":"#C8A27A","color2":"#C8A27A","cubaLado":1,"d":0.7,"elev":0,"fixed":true,"h":0.9,"kind":"laundry","name":"Lavanderia oculta com tanque invisível","oculta":true,"rot":180,"w":1.06,"x":2.57,"z":5.6},
@@ -392,7 +392,7 @@ const PLAN_LAYOUT = [
   {"color":"#1E1F21","d":0.03,"elev":0.2,"h":1.9,"kind":"bigmirror","name":"Espelho grande arredondado","rot":-90,"w":1,"x":2.385,"z":3},
   {"color":"#C9D3D8","d":0.01,"elev":1.12,"h":0.95,"kind":"wallmirror","name":"Espelho da lavanderia","rot":180,"w":1.06,"x":2.57,"z":5.945},
   {"color":"#EEE9DF","d":0.4,"elev":0.935,"h":0.3,"kind":"counterdecor","name":"Decoração do aparador","rot":180,"set":"aparador","w":0.55,"x":2.8,"z":5.68},
-  {"color":"#FBF7EE","d":0.5,"elev":1.95,"h":0.46,"kind":"lantern","name":"Luminária balão chinês","rot":0,"w":0.5,"x":3.72,"z":2.3},
+  {"color":"#FBF7EE","d":0.5,"elev":1.95,"h":0.46,"kind":"lantern","name":"Luminária balão chinês","rot":0,"w":0.5,"x":3.26,"z":1.85},
   {"color":"#D8B27A","d":0.12,"elev":1,"h":1.02,"kind":"violao","name":"Violão","rot":90,"w":0.38,"x":0.1,"z":0.45},
   {"color":"#0E0F11","color2":"#F2F0EA","d":0.05,"elev":1.05,"h":0.98,"kind":"guitarra","name":"Guitarra elétrica preta","rot":90,"w":0.33,"x":0.075,"z":1},
   {"color":"#FFFFFF","d":0.008,"elev":0,"h":2.5,"kind":"walltile","name":"Revestimento zellige (parede da pia)","rot":-90,"w":2.08,"x":4.916,"z":4.91},
@@ -411,10 +411,17 @@ const PLAN_LAYOUT = [
   {"color":"#9C6B3F","d":0.36,"elev":0,"h":0.72,"kind":"stoolind","name":"Banqueta industrial","rot":0,"w":0.36,"x":1.95,"z":-0.55},
   {"brackets":true,"color":"#B98A58","d":0.18,"elev":1.72,"estilo":"vazio","h":0.025,"kind":"wallshelf","name":"Suporte da planta pendente","rot":-90,"w":0.26,"x":2.31,"z":-0.3},
   {"color":"#B9785A","d":0.2,"elev":1.745,"h":1,"kind":"trailplant","name":"Jiboia pendente da varanda","rot":-90,"w":0.2,"x":2.31,"z":-0.3},
-  {"elev":0,"rot":-90,"kind":"sideboard","name":"Rack fechado com pés palito","w":1.6,"d":0.4,"h":0.6,"x":2.2,"z":1,"color":"#B08455"},
-  {"elev":0.6,"rot":-90,"kind":"counterdecor","name":"Decoração do rack","w":1.5,"d":0.3,"h":0.3,"x":2.22,"z":1,"color":"#1A1B1D","color2":"#D9663A","set":"rack"},
-  {"elev":1.2,"rot":-90,"kind":"picture","name":"Quadro da parede da TV","w":0.38,"d":0.03,"h":0.52,"x":2.385,"z":0.22,"color":"#E8A05C","frame":"#6B4A2E","mat":true,"art":20},
-  {"elev":0,"rot":0,"kind":"plant","name":"Ave-do-paraíso em cesto","w":0.55,"d":0.55,"h":1.4,"x":2.1,"z":2.12,"color":"#C9A36A","folhaGrande":true}
+  {"color":"#B08455","d":0.4,"elev":0,"h":0.6,"kind":"sideboard","name":"Rack fechado com pés palito","rot":-90,"w":1.6,"x":2.2,"z":1},
+  {"color":"#1A1B1D","color2":"#D9663A","d":0.3,"elev":0.6,"h":0.3,"kind":"counterdecor","name":"Decoração do rack","rot":-90,"set":"rack","w":1.5,"x":2.22,"z":1},
+  {"art":20,"color":"#E8A05C","d":0.03,"elev":1.2,"frame":"#6B4A2E","h":0.52,"kind":"picture","mat":true,"name":"Quadro da parede da TV","rot":-90,"w":0.38,"x":2.385,"z":0.22},
+  {"color":"#C9A36A","d":0.55,"elev":0,"folhaGrande":true,"h":1.4,"kind":"plant","name":"Ave-do-paraíso em cesto","rot":0,"w":0.55,"x":2.1,"z":2.12},
+  {"color":"#C9A27A","d":0.01,"elev":1,"h":0.75,"kind":"nichepanel","name":"Painel com LED atrás da escrivaninha","rot":-90,"w":1.38,"x":4.915,"z":1.59},
+  {"color":"#C9A27A","d":0.35,"elev":1.75,"h":0.65,"kind":"glasswardrobe","name":"Aéreo sobre a escrivaninha (vidro fumê)","rot":-90,"w":1.42,"x":4.745,"z":1.58},
+  {"color":"#C9A27A","d":0.38,"elev":0,"h":2.4,"kind":"bookcolumn","name":"Coluna de livros com criado-mudo","rot":-90,"w":0.42,"x":4.73,"z":2.5},
+  {"color":"#C9A27A","d":0.6,"elev":0,"h":2.4,"kind":"glasswardrobe","name":"Guarda-roupa de canto (parede lateral)","rot":-90,"w":1.04,"x":4.62,"z":3.23},
+  {"color":"#C9A27A","d":0.6,"elev":0,"h":2.4,"kind":"glasswardrobe","name":"Guarda-roupa de canto (parede do fundo)","rot":180,"w":0.55,"x":4.045,"z":3.45},
+  {"color":"#D6C6A0","d":1.4,"elev":0,"h":0.008,"kind":"rug","name":"Tapete de algodão cru do quarto","rot":0,"w":0.85,"weave":true,"x":4.45,"z":1.6},
+  {"color":"#141414","d":0.05,"elev":1.1,"h":0.56,"kind":"tv","name":"TV 43\" do quarto","rot":-90,"w":0.97,"x":4.88,"z":1.58}
 ];
 
 /* =========================================================
@@ -1335,6 +1342,32 @@ const BUILD = {
     const n=it.portas||4, dw=w/n; for(let i=1;i<n;i++) bx(g,0.004,ch-0.04,0.004,M(shade(it.color||'#B08455',-0.3),0.6),-w/2+dw*i,legH+ch/2,d/2+0.001);
     for(let i=0;i<n;i++){ bx(g,0.012,0.06,0.012,M(shade(it.color||'#B08455',-0.35),0.5),-w/2+dw*(i+0.5)+(i%2?-1:1)*(dw/2-0.05),legH+ch*0.62,d/2+0.007); }
     bx(g,w-0.02,0.004,0.004,M(shade(it.color||'#B08455',-0.25),0.6),0,h-0.03,d/2+0.001); },
+  glasswardrobe(g,it){ const {w,d,h}=it, m=M(it.color||'#C9A27A',0.45,0,'wood'), t=0.018, on=lightsOn&&mode!=='2d';
+    bx(g,t,h,d,m,-w/2+t/2,h/2,0); bx(g,t,h,d,m,w/2-t/2,h/2,0); bx(g,w,t,d,m,0,h-t/2,0); bx(g,w,t,d,m,0,t/2,0); bx(g,w,h,0.01,m,0,h/2,-d/2+0.005);
+    if(h>1.2){ const R=prng(Math.floor((it.x+5)*61+(it.z+5)*7)); bx(g,w-2*t,0.018,d-0.04,m,0,h*0.78,0); const rod=cy(g,0.012,0.012,w-2*t,M('#B9BDC1',0.3,0.8),0,h*0.74,0,10); rod.rotation.z=Math.PI/2;
+      for(let x=-w/2+0.08;x<w/2-0.06;x+=0.06+R()*0.04){ const len=0.45+R()*0.35; bx(g,0.02,len,d*0.7,M(['#2F3A45','#E8E3DA','#7A6A58','#3F4B3A','#C9B79C'][Math.floor(R()*5)],0.95,0,'fabric'),x,h*0.74-0.04-len/2,0); } }
+    if(h>1.2){ // parte de baixo: prateleira logo abaixo das roupas e gaveteiro
+      bx(g,w-2*t,0.018,d-0.04,m,0,0.86,0);
+      const dh=0.22; for(let k=0;k<3;k++){ const y=0.1+k*(dh+0.012)+dh/2; rbx(g,w-2*t-0.01,dh,0.018,m,0,y,d/2-0.06,0.003); bx(g,Math.min(0.2,(w-2*t)*0.4),0.012,0.012,M('#3A2A1C',0.6),0,y+dh*0.3,d/2-0.045); }
+      bx(g,w-2*t,0.018,d-0.04,m,0,0.82-0.009,0); }
+    const le=bx(g,w-2*t,0.006,0.012,M('#FFE7C2',0.5,0,'emit2'),0,h-t-0.004,d/2-0.04); le.castShadow=false;
+    if(on) fixtureLight(g,'point',0,h-0.08,0,{i:0.25,dist:1.6});
+    const n=Math.max(1,Math.round(w/0.5)), dw=w/n, fr=M('#1E1F21',0.4,0.5), glass=new THREE.MeshStandardMaterial({color:'#1E2226',roughness:0.08,metalness:0.2,transparent:true,opacity:0.72,envMapIntensity:1.0});
+    for(let i=0;i<n;i++){ const x=-w/2+dw*(i+0.5), z=d/2+0.008; bx(g,dw-0.006,0.022,0.02,fr,x,h-0.011,z); bx(g,dw-0.006,0.022,0.02,fr,x,0.011,z); bx(g,0.022,h,0.02,fr,x-dw/2+0.014,h/2,z); bx(g,0.022,h,0.02,fr,x+dw/2-0.014,h/2,z);
+      const gp=add(g,new THREE.Mesh(new THREE.PlaneGeometry(dw-0.05,h-0.044),glass)); gp.position.set(x,h/2,z); gp.castShadow=false;
+      bx(g,0.01,Math.min(0.4,h*0.3),0.02,M('#B9BDC1',0.3,0.8),x+(i%2?-1:1)*(dw/2-0.045),h*0.5,z+0.015); } },
+  bookcolumn(g,it){ const {w,d,h}=it, m=M(it.color||'#C9A27A',0.45,0,'wood'), t=0.018, nh=0.58, R=prng(Math.floor((it.x+5)*43+(it.z+5)*29));
+    rbx(g,w,nh,d,m,0,nh/2,0,0.005); [0.33,0.08].forEach(y=>bx(g,w-0.04,0.004,0.004,M('#3A2A1C',0.6),0,y+0.2,d/2+0.001));
+    bx(g,t,h-nh,d,m,-w/2+t/2,nh+(h-nh)/2,0); bx(g,t,h-nh,d,m,w/2-t/2,nh+(h-nh)/2,0); bx(g,w,h-nh,0.01,m,0,nh+(h-nh)/2,-d/2+0.005); bx(g,w,t,d,m,0,h-t/2,0);
+    const ns=4, sp=(h-nh)/ns; for(let i=0;i<ns;i++){ const y=nh+i*sp; if(i>0) bx(g,w-2*t,t,d,m,0,y,0);
+      const le=bx(g,w-2*t-0.02,0.005,0.01,M('#FFE7C2',0.5,0,'emit2'),0,y+sp-0.015,d/2-0.03); le.castShadow=false;
+      let x=-w/2+t+0.01; while(x<w/2-t-0.03){ const th=0.018+R()*0.022, bh=Math.min(sp-0.06,0.17+R()*0.09); if(R()<0.85) bx(g,th,bh,d*0.75,M(['#7A4A3A','#2F4858','#C8B28E','#E6E1D8','#9C3D2E','#3F5A45','#1F2A36'][Math.floor(R()*7)],0.75),x+th/2,y+t/2+bh/2,-0.02); x+=th+0.003; } }
+    cy(g,0.05,0.06,0.03,M('#EDE7DC',0.4),0,nh+0.015,0.02,20); add(g,new THREE.Mesh(new THREE.SphereGeometry(0.06,20,14),M('#FFF1DC',0.4,0,'emit2'))).position.set(0,nh+0.09,0.02); },
+  nichepanel(g,it){ const p=bx(g,it.w,it.h,Math.max(0.01,it.d),M(it.color||'#C9A27A',0.45,0,'wood'),0,it.h/2,0); p.castShadow=false;
+    const le=bx(g,it.w-0.04,0.008,0.012,M('#FFE2B8',0.5,0,'emit2'),0,it.h-0.02,it.d/2+0.006); le.castShadow=false;
+    if(lightsOn&&mode!=='2d') fixtureLight(g,'point',0,it.h-0.05,0.15,{i:0.35,dist:2}); },
+  upholpanel(g,it){ const {w,h,d}=it, c=M(it.color||'#9E4A3B',0.92,0,'fabric'), n=Math.max(2,Math.round(w/0.2)), sw=w/n;
+    for(let i=0;i<n;i++) rbx(g,sw-0.006,h,d,c,-w/2+sw*(i+0.5),h/2,0,Math.min(0.02,d/2-0.002)); },
   peninsula(g,it){ const {w,d,h}=it, body=bodyMat(it.color,0.55), top=M(it.color2||'#30475E',0.35,0.05);
     const cabD=Math.min(0.60,d-0.05), over=d-cabD, cz=d/2-cabD/2;
     bx(g,w-0.05,0.10,cabD-0.06,M('#22262A',0.8),-0.02,0.05,cz-0.02);
@@ -1602,9 +1635,17 @@ function applyWallHeight(){
 const ray=new THREE.Raycaster(), ndc=new THREE.Vector2(), floorPlane=new THREE.Plane(new THREE.Vector3(0,1,0),0), hitP=new THREE.Vector3();
 function setNdc(e){ const r=renderer.domElement.getBoundingClientRect(); ndc.set(((e.clientX-r.left)/r.width)*2-1, -((e.clientY-r.top)/r.height)*2+1); ray.setFromCamera(ndc,activeCam()); }
 function floorPoint(e){ setNdc(e); return ray.ray.intersectPlane(floorPlane,hitP)?{x:hitP.x,z:hitP.z}:null; }
+const PICK_LOW=new Set(['counterdecor','pendant','hangrack','tracklight','plafon','spot','lantern','picture','violao','guitarra','wallshelf','walltile','paintpanel','wallmirror','bigmirror','tilepanel','sconce','ducha','mirror','ac','trailplant','hood','brickpanel','tilefloor']);
+function isShown(o){ while(o){ if(o.visible===false) return false; o=o.parent; } return true; }
 function pickItem(e){ setNdc(e); const hits=ray.intersectObjects(itemRoot.children,true);
-  // tapetes têm prioridade menor
-  let best=null; for(const h of hits){ const id=h.object.userData.itemId; if(!id) continue; const it=state.items.find(i=>i.id===id); if(!it) continue; if(it.kind!=='rug') return it; if(!best) best=it; }
+  // ignora objetos ocultos; na planta, prioriza móveis de piso e destravados sobre decoração, luminárias e itens de parede
+  let best=null, bestScore=1e9, order=0;
+  for(const h of hits){ const id=h.object.userData.itemId; if(!id||!isShown(h.object)) continue; const it=state.items.find(i=>i.id===id); if(!it) continue; order++;
+    let sc = it.kind==='rug' ? 30 : 0;
+    if(mode==='2d'){ if(PICK_LOW.has(it.kind)) sc+=10; if((it.elev||0)>0.3) sc+=5; }
+    if(it.fixed && canWrite) sc+=3;
+    sc+=order*0.01;
+    if(sc<bestScore){ bestScore=sc; best=it; } }
   return best; }
 
 const pointers=new Map(); let drag=null, pan=null, pinch=null, look=null, moved=false, downAt=null;
@@ -1682,7 +1723,7 @@ window.addEventListener('keyup',e=>{ walk.keys[e.key.toLowerCase()]=false; });
 function walkBlockers(){
   const rs=WALLS.filter(p=>p.y0<1.0&&!wallRemoved(p)).map(p=>({x1:p.x1,z1:p.z1,x2:p.x2,z2:p.z2}));
   rs.push({x1:0.24,z1:-0.92,x2:2.40,z2:-0.86});
-  state.items.forEach(it=>{ if(['rug','mirror','picture','tv','ac','wallcab','microwave','cooktop','shower','pendant','hangrack','hood','wallshelf','tilepanel','brickpanel','tracklight','plafon','spot','counterdecor','bigmirror','wallmirror','lantern','violao','guitarra','walltile','tilefloor','sconce','ducha','paintpanel','barledge'].includes(it.kind)) return; if((it.elev||0)>1.0) return; rs.push(footprint(it)); });
+  state.items.forEach(it=>{ if(['rug','mirror','picture','tv','ac','wallcab','microwave','cooktop','shower','pendant','hangrack','hood','wallshelf','tilepanel','brickpanel','tracklight','plafon','spot','counterdecor','bigmirror','wallmirror','lantern','violao','guitarra','walltile','tilefloor','sconce','ducha','paintpanel','barledge','nichepanel','upholpanel'].includes(it.kind)) return; if((it.elev||0)>1.0) return; rs.push(footprint(it)); });
   return rs;
 }
 let blockers=null;
